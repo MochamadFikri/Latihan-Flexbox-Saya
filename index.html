@@ -1,0 +1,113 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICROGREEN</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Oleh Mochamad Fikri Fadila A -->
+</head>
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1>Microgreen</h1>
+            <p>Sayuran mini kaya akan Nutrisi</p>
+        </div>
+        <nav id="nav">
+            <a href="#" class="judul">Home</a>
+            <a class="Judul" id="mode" onclick="modeGelap()">Mode Malam</a>
+        </nav>
+    </header>
+    <main>
+        <article class="content">
+                <div class="text">
+                    <h1>
+                        APA ITU MICROGREEN ?
+                    </h1>
+                    <p>
+                        Menurut pakar, konsep bertanam ini diperuntukkan kepada sayur serta rempah yang dipanen saat masih berusia muda. Kurang lebih waktu panen tersebut adalah saat tanaman memiliki tinggi sekitar 2,5 sentimeter. Sehingga dalam kurun waktu 2 hingga 3 minggu Anda sudah dapat memetik hasilnya.
+                    </p>
+                    <h1>JENIS TANAMAN</h1>
+                    <p>
+                        Beberapa jenis sayuran di Indonesia yang populer untuk ditanam dengan metode ini adalah rumput gandum, soba, kohlrabi, mustard, dan kubis. Sedangkan untuk rempah contohnya adalah kemangi dan mint. Sejatinya, konsep ini mampu menghasilkan tanaman yang dengan kandungan vitamin dan mineral yang tinggi. Sehingga walaupun anda mengkonsumsi dalam jumlah kecil, namun tetap dapat meraih kandungan gizi yang cukup.
+                    </p>
+                    <p>
+                        Sumber : <a href="https://www.casaindonesia.com/article/read/10/2019/1327/Kenali-Microgreen-Solusi-Baru-Berkebun-di-Dalam-Rumah">www.casaindonesia.com</a>
+                    </p>
+                </div>
+                <div class="content2" >
+                    <div class="artikel card" id="artikel1">
+                        <img src="assets/image/1.jpg" alt="gambar_flex">
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="artikel card" id="artikel2">
+                        <img src="assets/image/4.jpg" alt="gambar_flex">
+                    </div>
+                    <div class="artikel card" id="artikel3">
+                        <img src="assets/image/5.jpeg" alt="gambar_flex">
+                    </div>
+                    <div class="artikel card" id="artikel4">
+                        <img src="assets/image/3.jpg" alt="gambar_flex">
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="artikel card" id="artikel5">
+                        <img src="assets/image/1.jpg" alt="gambar_flex">
+                    </div>
+                    <div class="artikel card" id="artikel6">
+                        <img src="assets/image/2.jpg" alt="gambar_flex">
+                    </div>
+                </div>
+        </article>
+        <aside>
+            <div class="carside" id="aside">
+                <br>
+                <h3>IDENTITAS DIRI</h3>
+                <br><br>
+                <img class="foto" src="assets/image/saya.jpg" alt="Foto saya" width="200px">
+                <br><br><br>
+                <span> Nama :</span><br><br>
+                <span><strong> MOCHAMAD FIKRI FADILA AKBAR </strong></span>
+                <br><br><br>
+                <span> Umur :</span><br><br>
+                <span><strong> 20 TAHUN </strong></span>
+                <br><br><br>
+                <span> Email :</span><br><br>
+                <span><strong> MOCHAMADFIKRI82@GMAIL.COM </strong></span>
+            </div>
+        </aside>
+    </main>
+    <footer id="footer">
+        <span>Mochamad Fikri Fadila Akbar</span>
+    </footer>
+    <script>
+        function modeGelap(){
+            document.body.style.background = '#23272A'; 
+            document.getElementById("nav").style.background = '#2C2F33'; 
+            document.getElementById("artikel1").style.background = '#2C2F33'; 
+            document.getElementById("artikel2").style.background = '#2C2F33'; 
+            document.getElementById("artikel3").style.background = '#2C2F33'; 
+            document.getElementById("artikel4").style.background = '#2C2F33'; 
+            document.getElementById("artikel5").style.background = '#2C2F33'; 
+            document.getElementById("artikel6").style.background = '#2C2F33'; 
+            document.getElementById("footer").style.background = '#2C2F33'; 
+            document.getElementById("aside").style.background = '#2C2F33'; 
+            document.getElementById("mode").innerHTML = "Mode Siang";
+            document.getElementById("mode").onclick = function(){ modeTerang(); };
+        }
+        function modeTerang(){
+            document.body.style.background = '#ffffff'; 
+            document.getElementById("nav").style.background = '#8db1ab'; 
+            document.getElementById("artikel1").style.background = '#ffffff'; 
+            document.getElementById("artikel2").style.background = '#ffffff'; 
+            document.getElementById("artikel3").style.background = '#ffffff'; 
+            document.getElementById("artikel4").style.background = '#ffffff'; 
+            document.getElementById("artikel5").style.background = '#ffffff'; 
+            document.getElementById("artikel6").style.background = '#ffffff'; 
+            document.getElementById("footer").style.background = '#8db1ab'; 
+            document.getElementById("aside").style.background = '#ffffff'; 
+            document.getElementById("mode").innerHTML = "Mode Malam";
+            document.getElementById("mode").onclick = function(){ modeGelap(); };
+        }
+    </script>
+</body>
+</html>

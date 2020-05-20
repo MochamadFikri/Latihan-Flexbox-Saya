@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    font-family: "josefin-sans";
+}
+body{
+    background-color: #ffffff;
+}
+header{
+    display: inline;
+}
+.jumbotron {
+    background-image: url("../../assets/image/jumbotron.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+    color: white;
+}
+.jumbotron>h1 {
+    margin: 10px;
+    font-size: 40px;
+}
+nav{
+    padding: 20px;
+    background: #8db1ab;
+    color: #cee397;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+@font-face {
+    font-family: "josefin-sans";
+    src: url("../../assets/font/JosefinSans-Regular.ttf");
+}
+.judul{
+    font-size: 20px;
+    text-decoration: none;
+    margin: 30px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.judul:hover{
+    font-size: 20px;
+    text-decoration: none;
+    margin: 30px;
+    color: #cee397;
+    cursor: pointer;
+}
+main{
+    padding: 50px;
+    margin: 0;
+}
+.content{
+    width: 68%;
+    float: left;
+    text-align: justify;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.text{
+    margin: 10px;
+    color: #8db1ab;
+}
+.text>h1{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.text>p{
+    margin-bottom: 50px;
+}
+.content2{
+    float: left;
+    text-align: justify;
+    display: flex;
+    margin: 0 auto;
+}
+aside{
+    float: right;
+    width: 30%;
+    height: auto;
+    text-align: center;
+}
+.carside{
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: #8db1ab;
+}
+.card{
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.foto{
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+ .artikel {
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 25%;
+ }
+ .artikel>img {
+     max-width: 100%;
+     max-height: 100%;
+ }
+.double{
+   flex-basis: 50%;
+}
+footer{
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #8db1ab;
+    color: #ffffff;
+    clear: both;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    aside,.content,.artikel, .carside {
+        width: 100%;
+        padding: 0;
+    }
+ }
+ @media screen and (max-width: 1000px) {
+    .foto{
+        width: 50%;
+    }
+ }
+ @media screen and (max-width: 1000px) {
+    .carside{
+        margin-bottom: 20px;
+    }
+ }
